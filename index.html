@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bundle/css/style.css">
+    <title>Kata 1.3</title>
+</head>
+
+<body>
+    <div class="wrapper">
+
+        <header class="page-header">
+            <div class="header-menu page-header__block">
+                <button class="header-button header-menu__burger">
+                    <img class="header-button__image" src="bundle/images/burger.svg" alt="menu">
+                </button>
+                <div class="header-separator header-menu__separator"></div>
+                <a href="#" class="header-menu__link">
+                    <img class="header-menu__logo" src="bundle/images/logo.svg" alt="CPS">
+                </a>
+            </div>
+            <div class="header-modals page-header__block">
+                <button class="header-button header-modals__call">
+                    <img class="header-button__image" src="bundle/images/call.svg" alt="call">
+                </button>
+                <button class="header-button header-modals__chat">
+                    <img class="header-button__image" src="bundle/images/chat.svg" alt="chat">
+                </button>
+                <button class="header-button header-modals__profile">
+                    <img class="header-button__image" src="bundle/images/profile.svg" alt="profile">
+                </button>
+                <div class="header-separator header-modals__separator"></div>
+                <button class="header-button header-modals__repair">
+                    <span class="header-button__text">Оставить заявку</span>
+                    <img class="header-button__image" src="bundle/images/repair.svg" alt="repair">
+                </button>
+                <button class="header-button header-modals__status">
+                    <span class="header-button__text">Статус ремонта</span>
+                    <img class="header-button__image" src="bundle/images/checkstatus.svg" alt="status">
+                </button>
+            </div>
+        </header>
+
+        <main class="main">
+            <section class="services">
+                <div class="services__title-wrapper">
+                    <h1 class="services__title">Услуги и сервисы</h1>
+                </div>
+
+                <div class="slider services__slider">
+                    <ul class="slider__wrapper">
+                        <li class="slider__item slider__item--active">
+                            <a href="#" class="slider__link">Ремонтируемые бренды</a>
+                        </li>
+                        <li class="slider__item">
+                            <a href="#"  class="slider__link">Ремонтируемые устройства</a>
+                        </li>
+                        <li class="slider__item">
+                            <a href="#"  class="slider__link">Цены на услуги</a>
+                        </li>
+                        <li class="slider__item">
+                            <a href="#"  class="slider__link">Адреса сервисных центров</a>
+                        </li>
+                        <li class="slider__item">
+                            <a href="#"  class="slider__link">Специальные цены</a>
+                        </li>
+                        <li class="slider__item">
+                            <a href="#" class="slider__link">Отзывы</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="services__content">
+                    <div class="services__text-wrapper">
+                        <p class="services__text">
+                            Мы являемся авторизованным сервисным центром по ремонту техники Dell.
+                            Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией
+                            производителя.
+                        </p>
+                        <p class="services__text services__text--hidden-mobile">
+                            Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера
+                            <span class="services__text--hidden-tablet">, что подтверждает
+                                большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по
+                                рекомендациям и, в свою очередь, советуют нас родным и близким.
+                            <span>
+                        </p>
+                        <button class="more-button">Читать далее</button>
+                    </div>
+                    <img class="services__image" src="bundle/images/CPS.jpg" alt="">
+                </div>
+            </section>
+        </main>
+
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,103 @@
+.page-header {
+    height: 88px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 var(--h-indent);
+
+    @media screen and (min-width: 768px) {
+        justify-content: flex-end;
+    }
+    @media screen and (min-width: 1120px) {
+        position: absolute;
+        top: 18px;
+        z-index: 1;
+        width: 100%;
+        margin-left: 0;
+        background-color: transparent;
+    }
+
+    &__block {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+    }
+}
+
+.header-menu {
+    @media screen and (min-width: 768px) {
+        flex-grow: 1;
+    }
+    @media screen and (min-width: 1120px) {
+        display: none;
+    }
+
+    &__link {
+        display: flex;
+        align-items: center;
+    }
+
+    &__separator {
+        @media screen and  (max-width: 767.98px) {
+            display: none;
+        }
+    }
+}
+
+.header-separator {
+    width: 2px;
+    height: 32px;
+    background-color: #eaeaea;
+    border-radius: 1px;
+    margin: 0 4px;
+
+    @media screen and (min-width: 1120px) {
+        display: none;
+    }
+}
+
+.header-modals__call,
+.header-modals__chat,
+.header-modals__profile {
+    @media screen and (max-width: 767.98px) {
+        display: none;
+    }
+    @media screen and (min-width: 1120px) {
+        display: none;
+    }
+}
+
+.header-modals__repair,
+.header-modals__status {
+    display: flex;
+    align-items: center;
+}
+
+.header-button {
+    &__image {
+        height: 40px;
+        width: 40px;
+        background-color: #ff3e79;
+        border-radius: 50%;
+        transition: all 0.15s;
+    }
+    
+    &__text {
+        margin-right: 8px;
+        font-weight: 500;
+        transition: all 0.15s;
+    
+        @media screen and (max-width: 1119.98px) {
+            display: none;
+        }
+    }
+    
+    &:hover {
+        .header-button__image {
+            background-color: #41F6D7;
+        }
+        .header-button__text {
+            color: #41F6D7;
+        }
+    }
+}

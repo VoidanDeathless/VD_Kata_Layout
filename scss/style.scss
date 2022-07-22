@@ -1,0 +1,12 @@
+@import "vars";
+@import "fonts";
+@import "default";
+@import "header";
+@import "main";
+
+.wrapper {
+    min-height: 100vh;
+    max-width: 1120px;
+    position: relative;
+    margin: auto;
+}

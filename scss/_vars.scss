@@ -1,0 +1,13 @@
+:root {
+    --h-indent: 16px;
+}
+@media screen and (min-width: 768px) {
+    body {
+        --h-indent: 24px;
+    }
+}
+@media screen and (min-width: 1120px) {
+    body {
+        --h-indent: 32px;
+    }
+}
