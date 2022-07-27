@@ -615,6 +615,9 @@ summary {
   color: #7E7E82;
   cursor: default;
 }
+.nav__link {
+  color: #1B1C21;
+}
 
 .sidebar-modals {
   display: -webkit-box;
