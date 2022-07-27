@@ -21,6 +21,10 @@
         display: flex;
         align-items: center;
         gap: 16px;
+
+        @media screen and (min-width: 1120px) {
+            gap: 32px;
+        }
     }
 }
 
@@ -32,7 +36,7 @@
         display: none;
     }
 
-    &__link {
+    &__logo {
         display: flex;
         align-items: center;
     }
@@ -42,6 +46,11 @@
             display: none;
         }
     }
+}
+
+.logo__icon {
+    width: 97px;
+    height: 51px;
 }
 
 .header-separator {
@@ -74,7 +83,7 @@
 }
 
 .header-button {
-    &__image {
+    &__icon {
         height: 40px;
         width: 40px;
         background-color: #ff3e79;
@@ -93,7 +102,7 @@
     }
     
     &:hover {
-        .header-button__image {
+        .header-button__icon {
             background-color: #41F6D7;
         }
         .header-button__text {
