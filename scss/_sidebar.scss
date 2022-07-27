@@ -1,7 +1,9 @@
 .sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
     background-color: #ffffff;
     width: 320px;
-    height: 100%;
     min-height: 100vh;
     box-shadow: -2px 0px 4px rgba(69, 79, 126, 0.02),
         16px 0px 52px rgba(14, 24, 80, 0.2);
@@ -94,7 +96,7 @@
         color: #1B1C21;
     }
     &__lang {
-        padding-top: 24px;
+        margin: 24px 0;
         display: flex;
         gap: 8px;
         font-weight: 500;
