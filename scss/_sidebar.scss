@@ -1,0 +1,103 @@
+.sidebar {
+    background-color: #ffffff;
+    width: 320px;
+    height: 100%;
+    min-height: 100vh;
+    box-shadow: -2px 0px 4px rgba(69, 79, 126, 0.02),
+        16px 0px 52px rgba(14, 24, 80, 0.2);
+
+    &__menu {
+        display: flex;
+        align-items: center;
+        padding: 0 24px;
+        height: 88px;
+        gap: 16px;
+    }
+    &__logo {
+        flex-grow: 1;
+    }
+}
+
+.sidebar-header {
+    display: flex;
+    flex-direction: column;
+    min-height: calc(100vh - 140px);
+    @media screen and (min-height: 1024px) {
+        min-height: 884px; //1024 - 140
+    }
+
+    &__nav {
+        flex-grow: 1;
+    }
+}
+
+.nav {
+    &__item {
+        position: relative;
+        line-height: 32px;
+        font-weight: 500;
+        padding: 0 24px;
+        margin: 0 0 24px;
+        transition: color 0.15s;
+
+        &::before {
+            content: " ";
+            position: absolute;
+            display: block;
+            left: -2px;
+            height: 32px;
+            width: 4px;
+            border-radius: 2px;
+            background-color: transparent;
+            transition: background-color 0.15s;
+        }
+        &--active::before {
+            background-color: #41F6D7;
+        }
+
+        &:not(.nav__item--active):hover .nav__link {
+            color: #FF3E79;
+        }
+        &:not(.nav__item--active):hover::before {
+            background-color: #FF3E79;
+        }
+        &--active .nav__link {
+            color: #7E7E82;
+            cursor: default;
+        }
+    }
+
+
+}
+
+.sidebar-modals {
+    display: flex;
+    padding: 0 24px;
+    gap: 16px;
+}
+
+.sidebar-footer {
+    display: flex;
+    flex-direction: column;
+    padding: 0 24px;
+    line-height: 32px;
+
+    &__mail {
+        font-weight: 500;
+        color: #1B1C21;
+    }
+    &__tel {
+        font-weight: 600;
+        font-size: 24px;
+        color: #1B1C21;
+    }
+    &__lang {
+        padding-top: 24px;
+        display: flex;
+        gap: 8px;
+        font-weight: 500;
+    }
+}
+.lang-button--active {
+    color: #7E7E82;
+}
