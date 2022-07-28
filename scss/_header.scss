@@ -48,11 +48,6 @@
     }
 }
 
-.logo__icon {
-    width: 97px;
-    height: 51px;
-}
-
 .header-separator {
     width: 2px;
     height: 32px;
@@ -65,9 +60,9 @@
     }
 }
 
-.header-modals__call,
-.header-modals__chat,
-.header-modals__profile {
+.header-actions__call,
+.header-actions__chat,
+.header-actions__profile {
     @media screen and (max-width: 767.98px) {
         display: none;
     }
@@ -76,8 +71,8 @@
     }
 }
 
-.header-modals__repair,
-.header-modals__status {
+.header-actions__repair,
+.header-actions__status {
     display: flex;
     align-items: center;
 }
