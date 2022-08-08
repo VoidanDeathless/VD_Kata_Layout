@@ -1,0 +1,20 @@
+.brends {
+  &__swiper {
+    @media screen and (max-width: 767.98px) {
+      height: 130px;
+    }
+
+    .swiper-fade::before,
+    .swiper-fade::after {
+      height: 80px;
+    }
+  }
+
+  &__more-button {
+    padding: 0 var(--h-indent);
+
+    @media screen and (max-width: 767.98px) {
+      display: none;
+    }
+  }
+}

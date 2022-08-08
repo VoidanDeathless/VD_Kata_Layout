@@ -1,21 +1,22 @@
+$accent-1: #41f6d7;
+$accent-2: #ff3e79;
+
 :root {
-    --h-indent: 16px;
+  --h-indent: 16px;
 }
 body {
+  /* Swiper.js */
+  --swiper-pagination-bullet-width: 12px;
+  --swiper-pagination-bullet-height: 12px;
+  --swiper-pagination-bullet-inactive-opacity: 1;
+  --swiper-pagination-bullet-inactive-color: #dddddd;
+  --swiper-pagination-color: #b5b6bc;
 
-    /* Swiper.js */
-    --swiper-pagination-bullet-width: 12px;
-    --swiper-pagination-bullet-height: 12px;
-    --swiper-pagination-bullet-inactive-opacity: 1;
-    --swiper-pagination-bullet-inactive-color: #DDDDDD;
-    --swiper-pagination-color: #B5B6BC;
+  @media screen and (min-width: 768px) {
+    --h-indent: 24px;
+  }
 
-    @media screen and (min-width: 768px) {
-        --h-indent: 24px;
-    }
-
-    @media screen and (min-width: 1120px) {
-        --h-indent: 32px;
-    }
+  @media screen and (min-width: 1120px) {
+    --h-indent: 32px;
+  }
 }
-

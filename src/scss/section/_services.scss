@@ -1,0 +1,59 @@
+.services {
+  width: 100%;
+  background-color: #f8f8f8;
+
+  &__content {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+
+    @media screen and (min-width: 768px) {
+      flex-wrap: nowrap;
+    }
+  }
+
+  &__text-wrapper {
+    padding: 0 var(--h-indent);
+  }
+
+  &__text {
+    font-family: 'TT Lakes';
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.2px;
+    color: #1b1c21;
+
+    &--hidden {
+      display: none;
+    }
+
+    &--hidden-mobile {
+      @media screen and (max-width: 767.98px) {
+        display: none;
+      }
+    }
+    &--hidden-tablet {
+      @media screen and (max-width: 1439.98px) {
+        display: none;
+      }
+    }
+
+    &--show {
+      display: revert;
+    }
+  }
+
+  &__image {
+    width: 100%;
+
+    @media screen and (min-width: 768px) {
+      min-width: 360px;
+      border-radius: 6px;
+      margin: 0 var(--h-indent);
+      margin-bottom: auto;
+    }
+    @media screen and (min-width: 1440px) {
+      min-width: 532px;
+    }
+  }
+}

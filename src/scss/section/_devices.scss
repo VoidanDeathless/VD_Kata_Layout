@@ -1,0 +1,41 @@
+.devices {
+  &__swiper {
+    @media screen and (max-width: 767.98px) {
+      height: 218px;
+    }
+
+    .swiper-fade::before,
+    .swiper-fade::after {
+      height: 168px;
+    }
+
+    .swiper-wrapper {
+      @media screen and (min-width: 767.98px) {
+        grid-template-rows: repeat(1, 1fr);
+      }
+    }
+
+    .swiper-slide {
+      height: 160px;
+    }
+    .swiper-slide__button {
+      height: 160px;
+    }
+    .swiper-slide__text {
+      align-self: flex-start;
+      padding-top: 16px;
+    }
+    .swiper-slide__icon {
+      align-self: flex-end;
+      margin-bottom: 16px;
+    }
+  }
+
+  &__more-button {
+    padding: 0 var(--h-indent);
+
+    @media screen and (max-width: 767.98px) {
+      display: none;
+    }
+  }
+}
