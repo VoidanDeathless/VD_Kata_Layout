@@ -23,10 +23,10 @@
                 </a>
             </div>
             <div class="header-actions page-header__block">
-                <button class="header-button header-actions__call">
+                <button class="header-button header-actions__call" action-target="modal-call">
                     <i class="header-button__icon icon icon--call"></i>
                 </button>
-                <button class="header-button header-actions__chat">
+                <button class="header-button header-actions__chat" action-target="modal-feedback">
                     <i class="header-button__icon icon icon--chat"></i>
                 </button>
                 <button class="header-button header-actions__profile">
@@ -93,10 +93,10 @@
             <footer class="sidebar-footer">
 
                 <div class="sidebar-footer__actions">
-                    <button class="header-button sidebar-footer__actions-call">
+                    <button class="header-button sidebar-footer__actions-call" action-target="modal-call">
                         <i class="header-button__icon icon icon--call"></i>
                     </button>
-                    <button class="header-button sidebar-footer__actions-chat">
+                    <button class="header-button sidebar-footer__actions-chat" action-target="modal-feedback">
                         <i class="header-button__icon icon icon--chat"></i>
                     </button>
                     <button class="header-button sidebar-footer__actions-profile">
@@ -469,37 +469,43 @@
         </footer>
 
         <div class="modal" id="modal-call">
-            <header class="modal__header">
-                <button class="header-button modal__close" id="modal-call-close">
-                    <i class="header-button__icon icon icon--close"></i>
-                </button>
-            </header>
-            <h2 class="modal__title">Заказать звонок</h2>
-            <form class="modal__form">
-                <input type="tel" class="modal__input" placeholder="Телефон" required>
-                <p class="modal__privacy">Нажимая “отправить”, вы даете согласие на <a href="#" class="modal__link">обработку персональных данных</a> и соглашаетесь с нашей <a href="#" class="modal__link">политикой конфиденциальности</a></p>
-                <button class="pill-button modal__submit">Отправить<i class="pill-button__icon icon icon--order"></i></button>
-            </form>
+            <div class="modal__wrapper">
+                <header class="modal__header">
+                    <button class="header-button modal__close">
+                        <i class="header-button__icon icon icon--close"></i>
+                    </button>
+                </header>
+                <h2 class="modal__title">Заказать звонок</h2>
+                <form class="modal__form">
+                    <input type="tel" class="modal__input" placeholder="Телефон" required>
+                    <p class="modal__privacy">Нажимая “отправить”, вы даете согласие на <a href="#" class="modal__link">обработку персональных данных</a> и соглашаетесь с нашей <a href="#" class="modal__link">политикой конфиденциальности</a></p>
+                    <button class="pill-button modal__submit">Отправить<i class="pill-button__icon icon icon--order"></i></button>
+                </form>
+            </div>
+            <div class="modal__overlay modal__overlay--hidden"></div>
         </div>
 
         <div class="modal" id="modal-feedback">
-            <header class="modal__header">
-                <button class="header-button modal__close" id="modal-feedback-close">
-                    <i class="header-button__icon icon icon--close"></i>
-                </button>
-            </header>
-            <h2 class="modal__title">Обратная связь</h2>
-            <form class="modal__form">
-                <input type="text" class="modal__input" placeholder="Имя">
-                <input type="tel" class="modal__input" placeholder="Телефон" required>
-                <input type="email" class="modal__input" placeholder="Электронная почта" required>
-                <textarea class="modal__textarea" rows="8" placeholder="Сообщение"></textarea>
-                <p class="modal__privacy">Нажимая “отправить”, вы даете согласие на <a href="#" class="modal__link">обработку персональных данных</a> и соглашаетесь с нашей <a href="#" class="modal__link">политикой конфиденциальности</a></p>
-                <button class="pill-button modal__submit">Отправить<i class="pill-button__icon icon icon--order"></i></button>
-            </form>
+            <div class="modal__wrapper">
+                <header class="modal__header">
+                    <button class="header-button modal__close">
+                        <i class="header-button__icon icon icon--close"></i>
+                    </button>
+                </header>
+                <h2 class="modal__title">Обратная связь</h2>
+                <form class="modal__form">
+                    <input type="text" class="modal__input" placeholder="Имя">
+                    <input type="tel" class="modal__input" placeholder="Телефон" required>
+                    <input type="email" class="modal__input" placeholder="Электронная почта" required>
+                    <textarea class="modal__textarea" rows="8" placeholder="Сообщение"></textarea>
+                    <p class="modal__privacy">Нажимая “отправить”, вы даете согласие на <a href="#" class="modal__link">обработку персональных данных</a> и соглашаетесь с нашей <a href="#" class="modal__link">политикой конфиденциальности</a></p>
+                    <button class="pill-button modal__submit">Отправить<i class="pill-button__icon icon icon--order"></i></button>
+                </form>
+            </div>
+            <div class="modal__overlay modal__overlay--hidden"></div>
         </div>
         <div class="sidebar-overlay sidebar-overlay--hidden"></div>
-        <div class="page-overlay page-overlay--hidden"></div>
+        
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
