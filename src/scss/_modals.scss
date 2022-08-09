@@ -7,12 +7,17 @@
   background-color: #ffffff;
   z-index: 100;
   border-left: 1px solid #d9fff5;
-  box-shadow: -2px 0px 4px rgba(69, 79, 126, 0.02),
-    16px 0px 52px rgba(14, 24, 80, 0.2);
+
   transition: all 0.5s;
 
   &--opened {
     right: 0;
+  }
+
+  &__wrapper {
+    min-height: 100vh;
+    box-shadow: -2px 0px 4px rgba(69, 79, 126, 0.02),
+    16px 0px 52px rgba(14, 24, 80, 0.2);
   }
 
   &__header {
@@ -103,5 +108,19 @@
 
   &__submit {
     align-self: flex-end;
+  }
+
+  &__overlay {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: #fffffff4;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  
+    &--hidden {
+      display: none;
+    }
   }
 }

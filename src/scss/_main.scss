@@ -134,19 +134,6 @@
   border-top: 1px solid #d9fff5;
 }
 
-.page-overlay {
-  position: fixed;
-  width: 100vw;
-  height: 100vh;
-  background-color: #fffffff4;
-  top: 0;
-  left: 0;
-  z-index: 90;
-
-  &--hidden {
-    display: none;
-  }
-}
 .sidebar-overlay {
   position: fixed;
   width: 100vw;
